@@ -1,53 +1,60 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { css } from "@emotion/core"
+import { Link, navigate } from "gatsby"
+import NavBar from "./nav-bar"
+import { getUser, isLoggedIn, logout } from "../services/auth"
 
-import Header from "./header"
-import "./layout.css"
+import { rhythm } from "../utils/typography"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+export default function Layout({ children }) {
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+    <div
+      css={css`
+        margin: 0 auto;
+        max-width: 700px;
+        padding: ${rhythm(2)};
+        padding-top: ${rhythm(1.5)};
+      `}
+    >
+      <Link to={`/`}>
+        <h3
+          css={css`
+            margin-bottom: ${rhythm(2)};
+            display: inline-block;
+            font-style: normal;
+          `}
+        >
+          Minicase
+        </h3>
+      </Link>
+      <Link
+        to={`/`}
+        css={css`
+          float: right;
+        `}
       >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+        Forside
+      </Link>
+      <Link
+        to={`/cesar/`}
+        css={css`
+          float: right;
+        `}
+      >
+        Cesar
+      </Link>
+      {isLoggedIn() ? (
+          <a
+            href="/"
+            onClick={event => {
+              event.preventDefault()
+              logout(() => navigate(`/detteErEnLoginSide`))
+            }}
+          >
+            Logout
+          </a>
+        ) : null}
+      {children}
+    </div>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout

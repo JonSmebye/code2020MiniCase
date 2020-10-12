@@ -1,22 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default function Home() {
+  return (
+    <Layout>
+      <h1>
+        Velkommen til denne miniCasen!
+      </h1>
+      <p>
+        Denne siden handler om en minicase som skal finne sted under code 2020.
+        Se deg rundt og kanskje du finner noe som tar deg videre til neste steg.
+      
+      </p>
+      <img src={require('../images/logo-3-mock.jpg')} alt=""></img>
+      <div style={{color:"white"}}>
+        <p>
+          
+          
+          
+          
+          Admin hash: 9dee45a24efffc78483a02cfcfd83433
+          
+          
+          
+          
+          </p>
+      </div>
+    </Layout>
+  )
+}
