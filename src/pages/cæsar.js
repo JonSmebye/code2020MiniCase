@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 export default function Cesar() {
     return (
         <Layout>
-        <h1>Gaius Julius Caesar</h1>
+        <h1>Gaius Julius Cæsar</h1>
         <img src="https://images.theconversation.com/files/249589/original/file-20181210-76968-oa9pdp.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip" alt=""/>
         <div>
             <p>
@@ -17,7 +17,7 @@ export default function Cesar() {
         </div>
         <div>
             <p>
-            Oziøåtmzmz, lå stizøm h lmswlm ømsæømv. Nwz i swuum aqlmzm øqt vmæøm æømo, mz lmø jizm i oi øqt nivmv æwu pmømz aqomvmzmQæIbmæwum.
+            Oziøåtmzmz, lå stizøm h lmswlm ømsæømv. Nwz h swuum aqlmzm øqt vmæøm æømo, mz lmø jizm h jdøøm åø kfæiz q åztmv uml aqomvmzmQæIbmæwum.
             </p>
         </div>
         </Layout>

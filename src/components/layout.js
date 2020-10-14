@@ -33,10 +33,10 @@ export default function Layout({ children }) {
         </h3>
       </Link>
       <Link
-        to={`/cesar/`}
+        to={`/cæsar/`}
         className="Meny"
       >
-        Cesar
+        Cæsar
       </Link>
       <Link
         to={`/`}
