@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import StegoBilde from "../images/START.png"
-import Stego2 from "../images/download.png"
+import Stego2 from "../images/stego1.png"
 
 export default function Stego() {
     return (

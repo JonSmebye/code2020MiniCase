@@ -28,7 +28,7 @@ class Login extends React.Component {
     return (
       <Layout>
         <h1>Log in</h1>
-        <h4>Brukernavnet er <i>anonymous</i>, passordet er gjemt et annet sted på nettsiden</h4>
+        <h4>Brukernavnet er <i>code</i>, passordet er gjemt et annet sted på nettsiden</h4>
         <form
           method="post"
           onSubmit={event => {
