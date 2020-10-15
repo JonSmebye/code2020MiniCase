@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 export default function Test() {
     return(
         <Layout>
-            <h1>Dette er en blank side</h1>
+            <h1>Dette er en blank side?</h1>
             <p style={{ color:"white" }} >
                 Passordet for inlogging er summen av disse:
                 9e925e9341b490bfd3b4c4ca3b0c1ef2
