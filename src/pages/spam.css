@@ -1,0 +1,10 @@
+
+.boldc:hover {
+    color: blue;
+    font-size: larger;
+}
+
+.boldd:hover {
+    color: red;
+    font-size: larger;
+}
