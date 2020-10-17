@@ -17,7 +17,7 @@ export default function Test() {
                 +
                 2f43b42fd833d1e77420a8dae7419000
             </p>
-            <p>
+            <p style={{color:"white"}}>
                 Du kommer deg kanskje til siste steget hvis du tar en titt på /spam siden:o
             </p>
         </Layout>
