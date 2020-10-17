@@ -12,7 +12,7 @@ export default function Tips() {
                 <p>Dette gjøres ved høyreklikk + inspiser/inspect</p>
             </div>
             <h3>2. Google alt alltid</h3>
-            <h3>3. KIIS - Keep it simple stupid</h3>
+            <h3>3. KISS - Keep it simple stupid</h3>
         </Layout>
     )
 }
